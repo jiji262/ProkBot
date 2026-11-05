@@ -1,0 +1,7 @@
+{
+  "source": "dist/electron-main/main-app.cjs",
+  "sourceSha256": "90ec55edf69be56c6cfd4fffa98fc45210acccf913b6c41402b5b6cca6fd538e",
+  "sha256": "3be4aafc23abfb00989607b8acbb91b60c9e5c90c1877f0a3bffce8c7b1a8bbd",
+  "byteOffset": 2409633,
+  "byteLength": 4070
+}

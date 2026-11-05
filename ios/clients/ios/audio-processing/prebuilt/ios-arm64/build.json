@@ -1,0 +1,34 @@
+{
+  "platform": "ios",
+  "architecture": "arm64",
+  "sampleRates": [
+    8000,
+    16000,
+    24000,
+    32000,
+    44100,
+    48000
+  ],
+  "sources": [
+    {
+      "name": "webrtc-audio-processing-1.3.tar.gz",
+      "sha256": "95552fc17faa0202133707bbb3727e8c2cf64d4266fe31bfdb2298d769c1db75"
+    },
+    {
+      "name": "abseil-cpp-20230125.1.tar.gz",
+      "sha256": "81311c17599b3712069ded20cca09a62ab0bf2a89dfa16993786c8782b7ed145"
+    },
+    {
+      "name": "abseil-cpp_20230125.1-4_patch.zip",
+      "sha256": "112ee72052049d930396c2778fc1c6e184137905dd75d60a97dcfc386426610d"
+    }
+  ],
+  "adapter": {
+    "GBAudioProcessing.cc": "015fdf58a96b5f8dfafdce525c698af0336b8f7eaad3dc3d7a7e2ce4d7a61e65",
+    "GBAudioProcessing.h": "e8cad02bb817a36ab7bf5a4d230fea53b4ee851a0fdb63749b7a6f6329b89928"
+  },
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)",
+  "sdk": "26.2",
+  "sha256": "c6415d4eed7c0e3ba958e3cb9f204e22eb7642971e7a55a25bdc3c23dd6cff08",
+  "bytes": 9407928
+}

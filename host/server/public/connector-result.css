@@ -1,0 +1,19 @@
+.result-page { display: grid; place-items: center; min-height: 100dvh; padding: 24px 16px; background: var(--sand-bg-sidebar); }
+.result-page .auth-theme { position: fixed; top: 16px; right: 16px; width: auto; min-width: 112px; }
+.result-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: min(380px, 100%);
+  padding: 32px 24px 28px;
+  border: var(--hairline) solid var(--sand-border-secondary-translucent);
+  border-radius: var(--radius-xl);
+  background: var(--sand-bg-elevated);
+  text-align: center;
+  box-shadow: 0 12px 40px var(--sand-shadow-popover);
+}
+.result-icon { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 8px; border-radius: 50%; background: var(--sand-bg-warn-secondary); color: var(--sand-text-warn-primary); font: 600 20px/1 var(--font-sans); }
+.result-icon.success { background: var(--sand-bg-success-secondary); color: var(--sand-text-success-primary); }
+.result-card p { color: var(--sand-text-secondary); font: var(--text-body2); }
+.result-card .result-footer { margin-top: 12px; color: var(--sand-text-tertiary); font: var(--text-label); }

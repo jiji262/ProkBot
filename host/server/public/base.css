@@ -1,0 +1,155 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--sand-bg-pane);
+  color: var(--sand-text-primary);
+  font: var(--text-body1);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, p { margin: 0; }
+h1 { font: var(--text-heading2); font-weight: var(--weight-semibold); letter-spacing: -0.012em; }
+h2 { font: var(--text-heading3); font-weight: var(--weight-semibold); }
+h3 { font: var(--text-body1); font-weight: var(--weight-medium); }
+a { color: var(--sand-text-accent-primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code, pre, .mono { font-family: var(--font-mono); font-size: 12px; }
+[hidden] { display: none !important; }
+::selection { background: var(--sand-bg-accent-secondary); }
+:focus-visible { outline: 2px solid var(--sand-border-focus-primary); outline-offset: 1px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Text fields follow the Sand input: 32px tall, 8px radius, hairline border that darkens on focus. */
+input:not([type=checkbox]):not([type=radio]):not([type=file]), select, textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 32px;
+  margin: 0;
+  padding: 5px 10px;
+  border: 1px solid var(--sand-border-secondary-translucent);
+  border-radius: var(--radius-md);
+  background: var(--sand-bg-elevated);
+  color: var(--sand-text-primary);
+  font: var(--text-body1);
+  transition: border-color var(--duration-fast) ease-out;
+}
+input::placeholder, textarea::placeholder { color: var(--sand-text-quaternary); }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--sand-border-primary-translucent); }
+input:focus-visible, select:focus-visible, textarea:focus-visible { box-shadow: 0 0 0 3px var(--sand-bg-accent-secondary); }
+input:disabled, select:disabled, textarea:disabled { color: var(--sand-text-quaternary); border-color: var(--sand-border-tertiary-translucent); }
+input[readonly] { color: var(--sand-text-secondary); }
+input:user-invalid, textarea:user-invalid { border-color: var(--sand-bg-danger-primary); }
+textarea { min-height: 96px; resize: vertical; line-height: 20px; }
+textarea.mono, pre { font-family: var(--font-mono); font-size: 12px; line-height: 18px; }
+select {
+  appearance: none;
+  padding-right: 30px;
+  background-image: var(--sand-chevron);
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+input[type=file] { max-width: 100%; color: var(--sand-text-secondary); font: var(--text-body2); }
+input[type=file]::file-selector-button {
+  margin-right: 10px;
+  padding: 5px 12px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--sand-bg-secondary);
+  color: var(--sand-text-primary);
+  font: var(--text-body2);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+}
+input[type=checkbox]:not([role=switch]), input[type=radio] {
+  width: 16px; height: 16px; margin: 0; flex: none; accent-color: var(--sand-bg-accent-primary); cursor: pointer;
+}
+
+/* Sand switch: 32×20 track, accent when on, 16px white thumb travelling 12px. */
+input[role=switch] {
+  appearance: none;
+  position: relative;
+  flex: none;
+  width: 32px;
+  height: 20px;
+  margin: 0;
+  border-radius: var(--radius-full);
+  background: var(--sand-bg-primary-disabled);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) ease-out;
+}
+input[role=switch]::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px #0000002e;
+  transition: transform 180ms var(--ease-out);
+}
+input[role=switch]:checked { background: var(--sand-bg-accent-primary); }
+input[role=switch]:checked::before { transform: translateX(12px); }
+input[role=switch]:disabled { opacity: .45; cursor: default; }
+
+/* Sand buttons: pill shape, neutral secondary by default. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex: none;
+  min-height: 32px;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--sand-bg-secondary);
+  color: var(--sand-text-primary);
+  font: var(--text-body1);
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--duration-fast) ease-out, color var(--duration-fast) ease-out;
+}
+.btn:hover:not(:disabled) { background: var(--sand-bg-secondary-hover); text-decoration: none; }
+.btn:disabled { background: var(--sand-bg-secondary-disabled); color: color-mix(in srgb, var(--sand-text-primary) 30%, transparent); cursor: default; }
+.btn-primary { background: var(--sand-bg-primary); color: var(--sand-text-inverted); }
+.btn-primary:hover:not(:disabled) { background: var(--sand-bg-primary-hover); }
+.btn-primary:disabled { background: var(--sand-bg-primary-disabled); }
+.btn-ghost { background: transparent; }
+.btn-ghost:hover:not(:disabled) { background: var(--sand-bg-secondary); }
+.btn-danger { background: var(--sand-bg-danger-secondary); color: var(--sand-text-danger-primary); }
+.btn-danger:hover:not(:disabled) { background: var(--sand-bg-danger-secondary-hover); }
+.btn-danger-solid { background: var(--sand-bg-danger-primary); color: #fff; }
+.btn-danger-solid:hover:not(:disabled) { background: var(--sand-bg-danger-primary-hover); }
+.btn-sm { min-height: 24px; padding: 4px 10px; font: var(--text-label); font-weight: var(--weight-medium); }
+.btn svg { width: 16px; height: 16px; }
+.btn-sm svg { width: 14px; height: 14px; }
+
+.icon-btn {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--sand-icon-secondary);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) ease-out, color var(--duration-fast) ease-out;
+}
+.icon-btn:hover:not(:disabled) { background: var(--sand-bg-secondary); color: var(--sand-icon-primary); }
+.icon-btn:disabled { color: var(--sand-icon-tertiary); opacity: .5; cursor: default; }
+.icon-btn[aria-pressed="true"] { background: var(--sand-bg-secondary-hover); color: var(--sand-icon-primary); }
+.icon-btn svg { width: 16px; height: 16px; }
+
+[data-private-hidden="true"] [data-private] { filter: blur(6px); user-select: none; }
+[data-private-hidden="true"] input[data-private], [data-private-hidden="true"] textarea[data-private] { -webkit-text-security: disc; filter: none; }

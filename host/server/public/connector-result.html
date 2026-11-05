@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="referrer" content="no-referrer" />
+    <title>应用授权 · Grok Bot</title>
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/connector-result.css" />
+    <script src="/theme.js"></script>
+    <script type="module" src="/connector-result.js"></script>
+  </head>
+  <body class="result-page">
+    <select class="auth-theme" data-theme-picker aria-label="外观">
+      <option value="system">跟随系统</option>
+      <option value="light">浅色</option>
+      <option value="dark">深色</option>
+    </select>
+    <main class="result-card" aria-live="polite">
+      <span id="result-icon" class="result-icon" aria-hidden="true">!</span>
+      <h1 id="result-title">授权未完成</h1>
+      <p id="result-description">返回 Grok Bot，重新授权此应用。</p>
+      <p class="result-footer">可以关闭此页面。</p>
+    </main>
+  </body>
+</html>

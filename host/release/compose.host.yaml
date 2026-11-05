@@ -1,0 +1,21 @@
+name: grokbot-host
+services:
+  host:
+    image: ${GROKBOT_HOST_IMAGE:-grokbot-host:local}
+    platform: linux/amd64
+    init: true
+    restart: unless-stopped
+    ports:
+      - "${GROKBOT_LISTEN_ADDRESS:-127.0.0.1}:${GROKBOT_PUBLIC_PORT:-18080}:8000"
+    environment:
+      GROKBOT_PUBLIC_URL: ${GROKBOT_PUBLIC_URL:-}
+      GROKBOT_REQUIRE_EXECUTION_NODE: "1"
+      TZ: ${TZ:-Asia/Singapore}
+    volumes:
+      - host-data:/data
+    stop_grace_period: 25s
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+volumes:
+  host-data:

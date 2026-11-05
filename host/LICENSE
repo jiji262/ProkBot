@@ -1,0 +1,98 @@
+ProkBot Noncommercial License 1.0
+SPDX-License-Identifier: LicenseRef-ProkBot-Noncommercial-1.0
+
+Copyright (c) 2026 ProkBot contributors
+
+1. Scope
+
+This license applies to original ProkBot contributions, including source code,
+patches, scripts, documentation, and compiled versions of those contributions
+(the "Software"). It applies to both public and private distributions and to
+ProkBot modifications incorporated into applications or container images.
+
+Original Grok Bot programs, trademarks, and separately identified third-party
+components are not licensed by this document. Their respective licenses and
+notices remain in effect. This license grants no additional rights to them and
+does not restrict rights granted by their own licenses when used independently.
+
+2. Noncommercial permission
+
+Subject to this license, you may use, run, study, copy, modify, and create
+derivative works of the Software solely for noncommercial purposes. Permitted
+purposes include personal self-hosting, personal learning, and noncommercial
+research and collaboration.
+
+You may redistribute public distributions and your modifications solely for
+noncommercial purposes, retaining this license and applicable copyright and
+third-party notices. You must identify your modifications and preserve these
+noncommercial conditions for the Software and derivatives of its original
+ProkBot contributions. You may not relicense those contributions under terms
+that authorize commercial use.
+
+3. Commercial use prohibited
+
+No permission is granted for use primarily intended for or directed toward
+commercial advantage or monetary compensation, whether direct or indirect.
+Prohibited uses include:
+
+- Selling or licensing the Software, patches, modified apps, container images,
+  or derivative works for payment.
+- Providing paid hosting, SaaS, subscriptions, APIs, managed deployments,
+  installation, customization, support, or other paid services using the Software.
+- Incorporating the Software into a commercial product or service, or using it
+  to deliver paid work or services to clients.
+- Using the Software for a business's internal operations or commercial projects,
+  even if access to the Software itself is not separately charged.
+- Monetizing access or use through advertising, bundled charges, or similar means.
+
+Charging through an intermediary, renaming the project, or modifying its code
+does not remove these restrictions.
+
+4. Private distributions
+
+A distribution marked "private" in its README or release manifest may be used,
+copied, and modified only by collaborators expressly authorized by the repository
+owner. Sharing that private distribution outside the authorized group, publishing
+it, or providing public downloads is prohibited. These restrictions are in
+addition to the noncommercial conditions. Independently obtained public editions
+remain subject to the public-distribution permissions in section 2.
+
+5. Compliance and termination
+
+You must retain this license and applicable notices in copies of the Software
+and its derivative distributions. Permissions under this license terminate if
+you violate its terms. No trademark license or other right not expressly stated
+here is granted.
+
+6. Warranty and liability
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHORS AND
+COPYRIGHT HOLDERS SHALL NOT BE LIABLE FOR CLAIMS, DAMAGES, OR OTHER LIABILITY
+ARISING FROM THE SOFTWARE OR ITS USE. USERS ARE RESPONSIBLE FOR THEIR USE AND
+FOR COMPLYING WITH APPLICABLE LAW AND THIRD-PARTY RIGHTS.
+
+简体中文条款说明
+
+本许可适用于 ProkBot 自有代码、补丁、脚本、文档及其编译产物，包括公开版、
+私有版，以及集成到客户端或 Docker 镜像中的本项目修改。
+
+允许个人非商业自用、自部署、学习、非商业研究和协作。公开版允许在保留本许可、
+版权及第三方声明的前提下进行非商业修改与分发；修改必须注明，派生的 ProkBot
+部分继续受非商业条件约束，不得改用允许商用的许可。
+
+禁止任何直接或间接以商业利益或金钱报酬为目的的使用，包括收费销售软件、
+补丁、客户端或镜像；付费托管、SaaS、订阅、API、部署、安装、定制和支持服务；
+商业产品集成、客户付费项目、企业内部经营及商业项目、广告变现或捆绑收费。
+更名、修改代码或通过第三方收费，不解除上述限制。
+
+标注为私有的仓库和发行包仅限仓库所有者明确授权的协作者使用和内部分享，
+不得外传、公开发布或提供公开下载，且同样禁止商业使用。
+
+原版 Grok Bot、商标及可单独识别的第三方组件仍遵守各自许可。本许可不授予
+这些资源的额外权利，也不限制其原许可允许的独立使用。
+
+软件按现状提供，不提供担保；在适用法律允许的范围内，作者及版权人不承担
+因软件或其使用产生的责任。使用者自行承担使用责任并遵守法律与第三方权利。
+违反条款将终止本许可授权。英文条款为本许可的准据文本。

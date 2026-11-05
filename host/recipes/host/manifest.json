@@ -1,0 +1,1480 @@
+{
+  "schema": "grokbot-host-inputs/v1",
+  "archive": {
+    "version": "d0a4baa",
+    "url": "https://public-asphr-vm-daemon-bucket.s3.us-east-1.amazonaws.com/sand-host-bundle/sand-host-bundle-d0a4baa.tgz",
+    "sha256": "b03894dc9a29eadc6ee1b7265424fe5695d77c5af0cdc022f27338cd69f73d0f"
+  },
+  "files": [
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "blob-worker-library-provenance.json",
+      "patch": "blob-worker-library-provenance.json.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "blob-worker-library.cjs",
+      "patch": "blob-worker-library.cjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "host-library-provenance.json",
+      "patch": "host-library-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "host-library.cjs",
+      "patch": "host-library.cjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/acceptance-provenance.json",
+      "patch": "recovered-core__stable__acceptance-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/acceptance-support.mjs",
+      "patch": "recovered-core__stable__acceptance-support.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-agent-store-worker.mjs",
+      "patch": "recovered-core__stable__blob-worker-agent-store-worker.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-conversation-blob-db.mjs",
+      "patch": "recovered-core__stable__blob-worker-conversation-blob-db.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-conversation-blob-gc.mjs",
+      "patch": "recovered-core__stable__blob-worker-conversation-blob-gc.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-conversation-blob-store.mjs",
+      "patch": "recovered-core__stable__blob-worker-conversation-blob-store.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-conversation-recovery.mjs",
+      "patch": "recovered-core__stable__blob-worker-conversation-recovery.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-legacy-blob-retirement.mjs",
+      "patch": "recovered-core__stable__blob-worker-legacy-blob-retirement.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-provenance.json",
+      "patch": "recovered-core__stable__blob-worker-provenance.json.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-sqlite-busy.mjs",
+      "patch": "recovered-core__stable__blob-worker-sqlite-busy.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-sqlite-recovery.mjs",
+      "patch": "recovered-core__stable__blob-worker-sqlite-recovery.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-core/stable/blob-worker-store-db.mjs",
+      "patch": "recovered-core__stable__blob-worker-store-db.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/box-handoff.mjs",
+      "patch": "recovered-core__stable__box-handoff.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/clock.mjs",
+      "patch": "recovered-core__stable__clock.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-box-capabilities.mjs",
+      "patch": "recovered-core__stable__computer-box-capabilities.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-box-env.mjs",
+      "patch": "recovered-core__stable__computer-box-env.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-box-factory.mjs",
+      "patch": "recovered-core__stable__computer-box-factory.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-box-file-transfer.mjs",
+      "patch": "recovered-core__stable__computer-box-file-transfer.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-box-mcp.mjs",
+      "patch": "recovered-core__stable__computer-box-mcp.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-box-remote-accessor.mjs",
+      "patch": "recovered-core__stable__computer-box-remote-accessor.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-box-shell-command.mjs",
+      "patch": "recovered-core__stable__computer-box-shell-command.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-box-windows.mjs",
+      "patch": "recovered-core__stable__computer-box-windows.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-computer-use.mjs",
+      "patch": "recovered-core__stable__computer-computer-use.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-loopback-sand-box.mjs",
+      "patch": "recovered-core__stable__computer-loopback-sand-box.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-protected-path-guard.mjs",
+      "patch": "recovered-core__stable__computer-protected-path-guard.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-provenance.json",
+      "patch": "recovered-core__stable__computer-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-sand-computer-auto-review.mjs",
+      "patch": "recovered-core__stable__computer-sand-computer-auto-review.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-sand-computer-tool.mjs",
+      "patch": "recovered-core__stable__computer-sand-computer-tool.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/computer-shared-desktop-sand-box.mjs",
+      "patch": "recovered-core__stable__computer-shared-desktop-sand-box.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-abstract-user-message-action-handler-methods-1.mjs",
+      "patch": "recovered-core__stable__engine-abstract-user-message-action-handler-methods-1.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-abstract-user-message-action-handler-methods-2.mjs",
+      "patch": "recovered-core__stable__engine-abstract-user-message-action-handler-methods-2.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-abstract-user-message-action-handler-methods-3.mjs",
+      "patch": "recovered-core__stable__engine-abstract-user-message-action-handler-methods-3.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-abstract-user-message-action-handler-methods-4.mjs",
+      "patch": "recovered-core__stable__engine-abstract-user-message-action-handler-methods-4.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-abstract-user-message-action-handler-methods-5.mjs",
+      "patch": "recovered-core__stable__engine-abstract-user-message-action-handler-methods-5.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-abstract-user-message-action-handler-methods-6.mjs",
+      "patch": "recovered-core__stable__engine-abstract-user-message-action-handler-methods-6.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-abstract-user-message-action-handler.mjs",
+      "patch": "recovered-core__stable__engine-abstract-user-message-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-async-ask-question-completion-action-handler.mjs",
+      "patch": "recovered-core__stable__engine-async-ask-question-completion-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-background-task-completion-action-handler.mjs",
+      "patch": "recovered-core__stable__engine-background-task-completion-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-execute-plan-action-handler.mjs",
+      "patch": "recovered-core__stable__engine-execute-plan-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-index.mjs",
+      "patch": "recovered-core__stable__engine-index.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-pending-tool-call-contract.mjs",
+      "patch": "recovered-core__stable__engine-pending-tool-call-contract.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-provenance.json",
+      "patch": "recovered-core__stable__engine-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-resume-action-handler.mjs",
+      "patch": "recovered-core__stable__engine-resume-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-state-methods-1.mjs",
+      "patch": "recovered-core__stable__engine-state-methods-1.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-state-methods-2.mjs",
+      "patch": "recovered-core__stable__engine-state-methods-2.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-state-methods-3.mjs",
+      "patch": "recovered-core__stable__engine-state-methods-3.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-state.mjs",
+      "patch": "recovered-core__stable__engine-state.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-tool-stream-executor.mjs",
+      "patch": "recovered-core__stable__engine-tool-stream-executor.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/engine-user-message-action-handler.mjs",
+      "patch": "recovered-core__stable__engine-user-message-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/handoff-async.mjs",
+      "patch": "recovered-core__stable__handoff-async.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/handoff-clock.mjs",
+      "patch": "recovered-core__stable__handoff-clock.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/handoff-provenance.json",
+      "patch": "recovered-core__stable__handoff-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/harness-agent-adapters.mjs",
+      "patch": "recovered-core__stable__harness-agent-adapters.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/harness-provenance.json",
+      "patch": "recovered-core__stable__harness-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/harness-sand-agent-runner.mjs",
+      "patch": "recovered-core__stable__harness-sand-agent-runner.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/harness-subagent-runtime.mjs",
+      "patch": "recovered-core__stable__harness-subagent-runtime.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/harness-turn-agent-composition.mjs",
+      "patch": "recovered-core__stable__harness-turn-agent-composition.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/harness-turn-run-shell.mjs",
+      "patch": "recovered-core__stable__harness-turn-run-shell.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-execution-ack-obligations.mjs",
+      "patch": "recovered-core__stable__host-execution-ack-obligations.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-execution-host-runner-composition.mjs",
+      "patch": "recovered-core__stable__host-execution-host-runner-composition.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-execution-provenance.json",
+      "patch": "recovered-core__stable__host-execution-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-execution-run-lifecycle.mjs",
+      "patch": "recovered-core__stable__host-execution-run-lifecycle.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-execution-runner-registry.mjs",
+      "patch": "recovered-core__stable__host-execution-runner-registry.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-execution-transcript-manager.mjs",
+      "patch": "recovered-core__stable__host-execution-transcript-manager.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-execution-turn-runtime.mjs",
+      "patch": "recovered-core__stable__host-execution-turn-runtime.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-agent-store.mjs",
+      "patch": "recovered-core__stable__host-flow-agent-store.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-legacy-transcript-mirror.mjs",
+      "patch": "recovered-core__stable__host-flow-legacy-transcript-mirror.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-provenance.json",
+      "patch": "recovered-core__stable__host-flow-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-send-pipeline.mjs",
+      "patch": "recovered-core__stable__host-flow-send-pipeline.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-send-turn-dispatch.mjs",
+      "patch": "recovered-core__stable__host-flow-send-turn-dispatch.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-transcript-journal-codec.mjs",
+      "patch": "recovered-core__stable__host-flow-transcript-journal-codec.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-transcript-mirror-router.mjs",
+      "patch": "recovered-core__stable__host-flow-transcript-mirror-router.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-transcript-mirror.mjs",
+      "patch": "recovered-core__stable__host-flow-transcript-mirror.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-turn-execution-service.mjs",
+      "patch": "recovered-core__stable__host-flow-turn-execution-service.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-flow-turn-settle.mjs",
+      "patch": "recovered-core__stable__host-flow-turn-settle.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-boot.mjs",
+      "patch": "recovered-core__stable__host-kernel-boot.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-define.mjs",
+      "patch": "recovered-core__stable__host-kernel-define.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-events.mjs",
+      "patch": "recovered-core__stable__host-kernel-events.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-gateway-command-error.mjs",
+      "patch": "recovered-core__stable__host-kernel-gateway-command-error.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-gateway-server.mjs",
+      "patch": "recovered-core__stable__host-kernel-gateway-server.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-host-event-bus.mjs",
+      "patch": "recovered-core__stable__host-kernel-host-event-bus.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-host-gateway-api.mjs",
+      "patch": "recovered-core__stable__host-kernel-host-gateway-api.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-host-initial-transcript-load.mjs",
+      "patch": "recovered-core__stable__host-kernel-host-initial-transcript-load.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-host-mcp-auth-completion.mjs",
+      "patch": "recovered-core__stable__host-kernel-host-mcp-auth-completion.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-host-roster-bookkeeping.mjs",
+      "patch": "recovered-core__stable__host-kernel-host-roster-bookkeeping.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-provenance.json",
+      "patch": "recovered-core__stable__host-kernel-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-registry.mjs",
+      "patch": "recovered-core__stable__host-kernel-registry.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-kernel-sand-host.mjs",
+      "patch": "recovered-core__stable__host-kernel-sand-host.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-session-agent-lifecycle.mjs",
+      "patch": "recovered-core__stable__host-session-agent-lifecycle.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-session-background-wakes.mjs",
+      "patch": "recovered-core__stable__host-session-background-wakes.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-session-box-handoff-resume.mjs",
+      "patch": "recovered-core__stable__host-session-box-handoff-resume.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-session-completion-revivals.mjs",
+      "patch": "recovered-core__stable__host-session-completion-revivals.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-session-pending-wake-rearm.mjs",
+      "patch": "recovered-core__stable__host-session-pending-wake-rearm.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-session-provenance.json",
+      "patch": "recovered-core__stable__host-session-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-session-sand-pending-wake-store.mjs",
+      "patch": "recovered-core__stable__host-session-sand-pending-wake-store.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-session-session-runtime.mjs",
+      "patch": "recovered-core__stable__host-session-session-runtime.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/host-session-upgrade-recreate-resume.mjs",
+      "patch": "recovered-core__stable__host-session-upgrade-recreate-resume.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-acceptance.mjs",
+      "patch": "recovered-core__stable__prompt-acceptance.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-draft-external-message-prompt.mjs",
+      "patch": "recovered-core__stable__prompt-tools-draft-external-message-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-mcp-meta-tools.mjs",
+      "patch": "recovered-core__stable__prompt-tools-mcp-meta-tools.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-prompt-collector-glue.mjs",
+      "patch": "recovered-core__stable__prompt-tools-prompt-collector-glue.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-provenance.json",
+      "patch": "recovered-core__stable__prompt-tools-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-remote-box-resources.mjs",
+      "patch": "recovered-core__stable__prompt-tools-remote-box-resources.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-runner-gates.mjs",
+      "patch": "recovered-core__stable__prompt-tools-runner-gates.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-sand-agent-profile-prompt.mjs",
+      "patch": "recovered-core__stable__prompt-tools-sand-agent-profile-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-sand-browser-use-subagent.mjs",
+      "patch": "recovered-core__stable__prompt-tools-sand-browser-use-subagent.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-sand-computer-use-subagent.mjs",
+      "patch": "recovered-core__stable__prompt-tools-sand-computer-use-subagent.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-sand-multitask.mjs",
+      "patch": "recovered-core__stable__prompt-tools-sand-multitask.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-sand-spotlight-tools.mjs",
+      "patch": "recovered-core__stable__prompt-tools-sand-spotlight-tools.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-sand-user-identity.mjs",
+      "patch": "recovered-core__stable__prompt-tools-sand-user-identity.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-slim-system-prompt.mjs",
+      "patch": "recovered-core__stable__prompt-tools-slim-system-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-system-prompt-assembly.mjs",
+      "patch": "recovered-core__stable__prompt-tools-system-prompt-assembly.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-system-prompt.mjs",
+      "patch": "recovered-core__stable__prompt-tools-system-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-tool-call-identity.mjs",
+      "patch": "recovered-core__stable__prompt-tools-tool-call-identity.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-tool-handoff.mjs",
+      "patch": "recovered-core__stable__prompt-tools-tool-handoff.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-turn-toolset.mjs",
+      "patch": "recovered-core__stable__prompt-tools-turn-toolset.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/prompt-tools-writing-style-prompt.mjs",
+      "patch": "recovered-core__stable__prompt-tools-writing-style-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/provenance.json",
+      "patch": "recovered-core__stable__provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/run-scheduler.mjs",
+      "patch": "recovered-core__stable__run-scheduler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-agent-db-recovery.mjs",
+      "patch": "recovered-core__stable__storage-agent-db-recovery.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-agent-db-schema.mjs",
+      "patch": "recovered-core__stable__storage-agent-db-schema.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-agent-db-serde.mjs",
+      "patch": "recovered-core__stable__storage-agent-db-serde.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-agent-db-transcript-pages.mjs",
+      "patch": "recovered-core__stable__storage-agent-db-transcript-pages.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-agent-db.mjs",
+      "patch": "recovered-core__stable__storage-agent-db.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-provenance.json",
+      "patch": "recovered-core__stable__storage-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-session-diagnostics.mjs",
+      "patch": "recovered-core__stable__storage-session-diagnostics.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-sqlite-busy.mjs",
+      "patch": "recovered-core__stable__storage-sqlite-busy.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-sqlite-recovery.mjs",
+      "patch": "recovered-core__stable__storage-sqlite-recovery.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/storage-store-db.mjs",
+      "patch": "recovered-core__stable__storage-store-db.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-classification.mjs",
+      "patch": "recovered-core__stable__tool-framework-classification.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-common.mjs",
+      "patch": "recovered-core__stable__tool-framework-common.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-core-disposal.mjs",
+      "patch": "recovered-core__stable__tool-framework-core-disposal.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-mcp-definition-errors.mjs",
+      "patch": "recovered-core__stable__tool-framework-mcp-definition-errors.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-mcp-errors.mjs",
+      "patch": "recovered-core__stable__tool-framework-mcp-errors.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-provenance.json",
+      "patch": "recovered-core__stable__tool-framework-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-result.mjs",
+      "patch": "recovered-core__stable__tool-framework-result.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-shell-errors.mjs",
+      "patch": "recovered-core__stable__tool-framework-shell-errors.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-timeout-suspension.mjs",
+      "patch": "recovered-core__stable__tool-framework-timeout-suspension.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-toolset.mjs",
+      "patch": "recovered-core__stable__tool-framework-toolset.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/tool-framework-write-errors.mjs",
+      "patch": "recovered-core__stable__tool-framework-write-errors.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/worker-pool-agent-worker-pool.mjs",
+      "patch": "recovered-core__stable__worker-pool-agent-worker-pool.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/worker-pool-provenance.json",
+      "patch": "recovered-core__stable__worker-pool-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "recovered-core/stable/worker-pool-worker-blob-store.mjs",
+      "patch": "recovered-core__stable__worker-pool-worker-blob-store.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "recovered-worker/agent-isolation/agent-store-worker.cjs",
+      "patch": "recovered-worker__agent-isolation__agent-store-worker.cjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/acceptance-provenance.json",
+      "patch": "release-reliability__acceptance-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/acceptance-support.mjs",
+      "patch": "release-reliability__acceptance-support.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-agent-store-worker.mjs",
+      "patch": "release-reliability__blob-worker-agent-store-worker.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-conversation-blob-db.mjs",
+      "patch": "release-reliability__blob-worker-conversation-blob-db.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-conversation-blob-gc.mjs",
+      "patch": "release-reliability__blob-worker-conversation-blob-gc.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-conversation-blob-store.mjs",
+      "patch": "release-reliability__blob-worker-conversation-blob-store.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-conversation-recovery.mjs",
+      "patch": "release-reliability__blob-worker-conversation-recovery.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-legacy-blob-retirement.mjs",
+      "patch": "release-reliability__blob-worker-legacy-blob-retirement.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-provenance.json",
+      "patch": "release-reliability__blob-worker-provenance.json.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-sqlite-busy.mjs",
+      "patch": "release-reliability__blob-worker-sqlite-busy.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-sqlite-recovery.mjs",
+      "patch": "release-reliability__blob-worker-sqlite-recovery.mjs.gbp.gz"
+    },
+    {
+      "source": "agent-isolation/agent-store-worker.cjs",
+      "target": "release-reliability/blob-worker-store-db.mjs",
+      "patch": "release-reliability__blob-worker-store-db.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/box-handoff.mjs",
+      "patch": "release-reliability__box-handoff.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/clock.mjs",
+      "patch": "release-reliability__clock.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-box-capabilities.mjs",
+      "patch": "release-reliability__computer-box-capabilities.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-box-env.mjs",
+      "patch": "release-reliability__computer-box-env.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-box-factory.mjs",
+      "patch": "release-reliability__computer-box-factory.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-box-file-transfer.mjs",
+      "patch": "release-reliability__computer-box-file-transfer.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-box-mcp.mjs",
+      "patch": "release-reliability__computer-box-mcp.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-box-remote-accessor.mjs",
+      "patch": "release-reliability__computer-box-remote-accessor.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-box-shell-command.mjs",
+      "patch": "release-reliability__computer-box-shell-command.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-box-windows.mjs",
+      "patch": "release-reliability__computer-box-windows.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-computer-use.mjs",
+      "patch": "release-reliability__computer-computer-use.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-loopback-sand-box.mjs",
+      "patch": "release-reliability__computer-loopback-sand-box.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-protected-path-guard.mjs",
+      "patch": "release-reliability__computer-protected-path-guard.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-provenance.json",
+      "patch": "release-reliability__computer-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-sand-computer-auto-review.mjs",
+      "patch": "release-reliability__computer-sand-computer-auto-review.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-sand-computer-tool.mjs",
+      "patch": "release-reliability__computer-sand-computer-tool.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/computer-shared-desktop-sand-box.mjs",
+      "patch": "release-reliability__computer-shared-desktop-sand-box.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-abstract-user-message-action-handler-methods-1.mjs",
+      "patch": "release-reliability__engine-abstract-user-message-action-handler-methods-1.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-abstract-user-message-action-handler-methods-2.mjs",
+      "patch": "release-reliability__engine-abstract-user-message-action-handler-methods-2.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-abstract-user-message-action-handler-methods-3.mjs",
+      "patch": "release-reliability__engine-abstract-user-message-action-handler-methods-3.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-abstract-user-message-action-handler-methods-4.mjs",
+      "patch": "release-reliability__engine-abstract-user-message-action-handler-methods-4.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-abstract-user-message-action-handler-methods-5.mjs",
+      "patch": "release-reliability__engine-abstract-user-message-action-handler-methods-5.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-abstract-user-message-action-handler-methods-6.mjs",
+      "patch": "release-reliability__engine-abstract-user-message-action-handler-methods-6.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-abstract-user-message-action-handler.mjs",
+      "patch": "release-reliability__engine-abstract-user-message-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-async-ask-question-completion-action-handler.mjs",
+      "patch": "release-reliability__engine-async-ask-question-completion-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-background-task-completion-action-handler.mjs",
+      "patch": "release-reliability__engine-background-task-completion-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-execute-plan-action-handler.mjs",
+      "patch": "release-reliability__engine-execute-plan-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-index.mjs",
+      "patch": "release-reliability__engine-index.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-pending-tool-call-contract.mjs",
+      "patch": "release-reliability__engine-pending-tool-call-contract.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-provenance.json",
+      "patch": "release-reliability__engine-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-resume-action-handler.mjs",
+      "patch": "release-reliability__engine-resume-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-state-methods-1.mjs",
+      "patch": "release-reliability__engine-state-methods-1.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-state-methods-2.mjs",
+      "patch": "release-reliability__engine-state-methods-2.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-state-methods-3.mjs",
+      "patch": "release-reliability__engine-state-methods-3.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-state.mjs",
+      "patch": "release-reliability__engine-state.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-tool-stream-executor.mjs",
+      "patch": "release-reliability__engine-tool-stream-executor.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/engine-user-message-action-handler.mjs",
+      "patch": "release-reliability__engine-user-message-action-handler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/handoff-async.mjs",
+      "patch": "release-reliability__handoff-async.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/handoff-clock.mjs",
+      "patch": "release-reliability__handoff-clock.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/handoff-provenance.json",
+      "patch": "release-reliability__handoff-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/harness-agent-adapters.mjs",
+      "patch": "release-reliability__harness-agent-adapters.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/harness-provenance.json",
+      "patch": "release-reliability__harness-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/harness-sand-agent-runner.mjs",
+      "patch": "release-reliability__harness-sand-agent-runner.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/harness-subagent-runtime.mjs",
+      "patch": "release-reliability__harness-subagent-runtime.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/harness-turn-agent-composition.mjs",
+      "patch": "release-reliability__harness-turn-agent-composition.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/harness-turn-run-shell.mjs",
+      "patch": "release-reliability__harness-turn-run-shell.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-execution-ack-obligations.mjs",
+      "patch": "release-reliability__host-execution-ack-obligations.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-execution-host-runner-composition.mjs",
+      "patch": "release-reliability__host-execution-host-runner-composition.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-execution-provenance.json",
+      "patch": "release-reliability__host-execution-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-execution-run-lifecycle.mjs",
+      "patch": "release-reliability__host-execution-run-lifecycle.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-execution-runner-registry.mjs",
+      "patch": "release-reliability__host-execution-runner-registry.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-execution-transcript-manager.mjs",
+      "patch": "release-reliability__host-execution-transcript-manager.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-execution-turn-runtime.mjs",
+      "patch": "release-reliability__host-execution-turn-runtime.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-agent-store.mjs",
+      "patch": "release-reliability__host-flow-agent-store.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-legacy-transcript-mirror.mjs",
+      "patch": "release-reliability__host-flow-legacy-transcript-mirror.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-provenance.json",
+      "patch": "release-reliability__host-flow-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-send-pipeline.mjs",
+      "patch": "release-reliability__host-flow-send-pipeline.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-send-turn-dispatch.mjs",
+      "patch": "release-reliability__host-flow-send-turn-dispatch.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-transcript-journal-codec.mjs",
+      "patch": "release-reliability__host-flow-transcript-journal-codec.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-transcript-mirror-router.mjs",
+      "patch": "release-reliability__host-flow-transcript-mirror-router.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-transcript-mirror.mjs",
+      "patch": "release-reliability__host-flow-transcript-mirror.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-turn-execution-service.mjs",
+      "patch": "release-reliability__host-flow-turn-execution-service.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-flow-turn-settle.mjs",
+      "patch": "release-reliability__host-flow-turn-settle.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-boot.mjs",
+      "patch": "release-reliability__host-kernel-boot.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-define.mjs",
+      "patch": "release-reliability__host-kernel-define.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-events.mjs",
+      "patch": "release-reliability__host-kernel-events.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-gateway-command-error.mjs",
+      "patch": "release-reliability__host-kernel-gateway-command-error.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-gateway-server.mjs",
+      "patch": "release-reliability__host-kernel-gateway-server.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-host-event-bus.mjs",
+      "patch": "release-reliability__host-kernel-host-event-bus.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-host-gateway-api.mjs",
+      "patch": "release-reliability__host-kernel-host-gateway-api.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-host-initial-transcript-load.mjs",
+      "patch": "release-reliability__host-kernel-host-initial-transcript-load.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-host-mcp-auth-completion.mjs",
+      "patch": "release-reliability__host-kernel-host-mcp-auth-completion.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-host-roster-bookkeeping.mjs",
+      "patch": "release-reliability__host-kernel-host-roster-bookkeeping.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-provenance.json",
+      "patch": "release-reliability__host-kernel-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-registry.mjs",
+      "patch": "release-reliability__host-kernel-registry.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-kernel-sand-host.mjs",
+      "patch": "release-reliability__host-kernel-sand-host.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-library-reliable.cjs",
+      "patch": "release-reliability__host-library-reliable.cjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-session-agent-lifecycle.mjs",
+      "patch": "release-reliability__host-session-agent-lifecycle.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-session-background-wakes.mjs",
+      "patch": "release-reliability__host-session-background-wakes.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-session-box-handoff-resume.mjs",
+      "patch": "release-reliability__host-session-box-handoff-resume.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-session-completion-revivals.mjs",
+      "patch": "release-reliability__host-session-completion-revivals.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-session-pending-wake-rearm.mjs",
+      "patch": "release-reliability__host-session-pending-wake-rearm.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-session-provenance.json",
+      "patch": "release-reliability__host-session-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-session-sand-pending-wake-store.mjs",
+      "patch": "release-reliability__host-session-sand-pending-wake-store.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-session-session-runtime.mjs",
+      "patch": "release-reliability__host-session-session-runtime.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/host-session-upgrade-recreate-resume.mjs",
+      "patch": "release-reliability__host-session-upgrade-recreate-resume.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/manifest.json",
+      "patch": "release-reliability__manifest.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-acceptance.mjs",
+      "patch": "release-reliability__prompt-acceptance.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-draft-external-message-prompt.mjs",
+      "patch": "release-reliability__prompt-tools-draft-external-message-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-mcp-meta-tools.mjs",
+      "patch": "release-reliability__prompt-tools-mcp-meta-tools.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-prompt-collector-glue.mjs",
+      "patch": "release-reliability__prompt-tools-prompt-collector-glue.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-provenance.json",
+      "patch": "release-reliability__prompt-tools-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-remote-box-resources.mjs",
+      "patch": "release-reliability__prompt-tools-remote-box-resources.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-runner-gates.mjs",
+      "patch": "release-reliability__prompt-tools-runner-gates.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-sand-agent-profile-prompt.mjs",
+      "patch": "release-reliability__prompt-tools-sand-agent-profile-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-sand-browser-use-subagent.mjs",
+      "patch": "release-reliability__prompt-tools-sand-browser-use-subagent.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-sand-computer-use-subagent.mjs",
+      "patch": "release-reliability__prompt-tools-sand-computer-use-subagent.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-sand-multitask.mjs",
+      "patch": "release-reliability__prompt-tools-sand-multitask.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-sand-spotlight-tools.mjs",
+      "patch": "release-reliability__prompt-tools-sand-spotlight-tools.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-sand-user-identity.mjs",
+      "patch": "release-reliability__prompt-tools-sand-user-identity.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-slim-system-prompt.mjs",
+      "patch": "release-reliability__prompt-tools-slim-system-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-system-prompt-assembly.mjs",
+      "patch": "release-reliability__prompt-tools-system-prompt-assembly.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-system-prompt.mjs",
+      "patch": "release-reliability__prompt-tools-system-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-tool-call-identity.mjs",
+      "patch": "release-reliability__prompt-tools-tool-call-identity.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-tool-handoff.mjs",
+      "patch": "release-reliability__prompt-tools-tool-handoff.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-turn-toolset.mjs",
+      "patch": "release-reliability__prompt-tools-turn-toolset.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/prompt-tools-writing-style-prompt.mjs",
+      "patch": "release-reliability__prompt-tools-writing-style-prompt.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/provenance.json",
+      "patch": "release-reliability__provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/reliability.json",
+      "patch": "release-reliability__reliability.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/run-scheduler.mjs",
+      "patch": "release-reliability__run-scheduler.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-agent-db-recovery.mjs",
+      "patch": "release-reliability__storage-agent-db-recovery.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-agent-db-schema.mjs",
+      "patch": "release-reliability__storage-agent-db-schema.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-agent-db-serde.mjs",
+      "patch": "release-reliability__storage-agent-db-serde.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-agent-db-transcript-pages.mjs",
+      "patch": "release-reliability__storage-agent-db-transcript-pages.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-agent-db.mjs",
+      "patch": "release-reliability__storage-agent-db.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-provenance.json",
+      "patch": "release-reliability__storage-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-session-diagnostics.mjs",
+      "patch": "release-reliability__storage-session-diagnostics.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-sqlite-busy.mjs",
+      "patch": "release-reliability__storage-sqlite-busy.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-sqlite-recovery.mjs",
+      "patch": "release-reliability__storage-sqlite-recovery.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/storage-store-db.mjs",
+      "patch": "release-reliability__storage-store-db.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-classification.mjs",
+      "patch": "release-reliability__tool-framework-classification.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-common.mjs",
+      "patch": "release-reliability__tool-framework-common.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-core-disposal.mjs",
+      "patch": "release-reliability__tool-framework-core-disposal.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-mcp-definition-errors.mjs",
+      "patch": "release-reliability__tool-framework-mcp-definition-errors.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-mcp-errors.mjs",
+      "patch": "release-reliability__tool-framework-mcp-errors.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-provenance.json",
+      "patch": "release-reliability__tool-framework-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-result.mjs",
+      "patch": "release-reliability__tool-framework-result.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-shell-errors.mjs",
+      "patch": "release-reliability__tool-framework-shell-errors.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-timeout-suspension.mjs",
+      "patch": "release-reliability__tool-framework-timeout-suspension.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-toolset.mjs",
+      "patch": "release-reliability__tool-framework-toolset.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/tool-framework-write-errors.mjs",
+      "patch": "release-reliability__tool-framework-write-errors.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/worker-pool-agent-worker-pool.mjs",
+      "patch": "release-reliability__worker-pool-agent-worker-pool.mjs.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/worker-pool-provenance.json",
+      "patch": "release-reliability__worker-pool-provenance.json.gbp.gz"
+    },
+    {
+      "source": "host-main.cjs",
+      "target": "release-reliability/worker-pool-worker-blob-store.mjs",
+      "patch": "release-reliability__worker-pool-worker-blob-store.mjs.gbp.gz"
+    }
+  ]
+}

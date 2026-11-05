@@ -1,0 +1,25 @@
+ARG PATCH_IMAGE=grokbot-patch-base:local
+ARG BOX_IMAGE=public.ecr.aws/k0i0n2g5/cursorenvironments/universal@sha256:73c04dc8722de013fb2ad99366171e3a4c7379f1253d127348a5047d13f0ed41
+FROM ${PATCH_IMAGE} AS patch
+COPY inputs/host.tgz /inputs/host.tgz
+RUN python3 release/patch-host.py --archive /inputs/host.tgz --output /generated
+
+FROM ${BOX_IMAGE}
+WORKDIR /opt/grokbot
+COPY --from=patch /opt/grokbot /opt/grokbot
+COPY --from=patch /generated/original artifacts/host-d0a4baa/sand-host/
+COPY --from=patch /generated/seed seed/
+ENV NODE_PATH=/opt/sand/deps:/opt/sand/sand-host/node_modules:/exec-daemon/node_modules \
+    GROKBOT_DATA_DIR=/data GROKBOT_STATE_DIR=/data/runtime \
+    GROKBOT_MODEL_ENV=/data/model.env GROKBOT_HOST_DATA_DIR=/data/runtime/host-data \
+    GROKBOT_ORIGINAL_HOST=/opt/grokbot/artifacts/host-d0a4baa/sand-host \
+    GROKBOT_RUNTIME_DIR=/opt/grokbot/runtime GROKBOT_RECOVERED_CORE=1 \
+    GROKBOT_HOST_BIND=127.0.0.1 GROKBOT_HOST_PORT=1340 \
+    GROKBOT_INTERNAL_HOST_URL=http://127.0.0.1:1340 \
+    GROKBOT_INTERNAL_HOST_TOKEN_FILE=/data/internal-host-token \
+    GROKBOT_NOTIFICATION_URL=http://127.0.0.1:8000/internal/notifications \
+    GROKBOT_TAILCAT_BINARY=/opt/grokbot/bin/grokbot-tailcat
+EXPOSE 8000
+VOLUME ["/data"]
+HEALTHCHECK --interval=15s --timeout=4s --start-period=45s --retries=3 CMD ["/exec-daemon/node", "deploy/healthcheck.mjs"]
+ENTRYPOINT ["/exec-daemon/node", "/opt/grokbot/deploy/supervisor.mjs"]

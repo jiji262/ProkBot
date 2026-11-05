@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:">
+<title>Grok Bot</title><link rel="stylesheet" href="connect.css"></head>
+<body><div class="drag"></div><main><img class="icon" src="icon.png" alt="Grok Bot"><h1></h1>
+<form id="form"><label class="network-toggle">Tailcat <input id="tailcat" type="checkbox" role="switch"></label><label for="server"></label><input id="server" type="url" placeholder="https://bot.example.com" required autocomplete="url" spellcheck="false">
+<label for="key"></label><input id="key" type="text" maxlength="6" pattern="[A-Za-z0-9]{6}" autocapitalize="characters" required autocomplete="off" spellcheck="false">
+<p id="status" role="status" aria-live="polite"></p><div class="actions"><button id="disconnect" type="button" hidden></button><button id="connect" type="submit"></button></div></form>
+</main><script type="module" src="connect.js"></script></body></html>

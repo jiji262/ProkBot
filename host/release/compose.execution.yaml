@@ -1,0 +1,41 @@
+name: grokbot-execution
+services:
+  gateway:
+    platform: linux/amd64
+    build:
+      context: ..
+      dockerfile: release/Dockerfile.execution
+    restart: unless-stopped
+    init: true
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    ports:
+      - "${GROKBOT_NODE_LISTEN_ADDRESS:-127.0.0.1}:${GROKBOT_NODE_PORT:-18443}:8443"
+    environment:
+      GROKBOT_NODE_TOKEN: ${GROKBOT_NODE_TOKEN:?Set an execution node key}
+      GROKBOT_BOX_HOST: box
+      GROKBOT_TAILCAT_ENABLED: ${GROKBOT_TAILCAT_ENABLED:-0}
+      GROKBOT_TAILCAT_RELAY: ${GROKBOT_TAILCAT_RELAY:-}
+      GROKBOT_TAILCAT_DERP_MAP_URL: ${GROKBOT_TAILCAT_DERP_MAP_URL:-}
+    volumes:
+      - gateway-data:/data
+    depends_on: [box]
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+  box:
+    image: ${GROKBOT_BOX_IMAGE:-grokbot-box-input:9d2ac1b}
+    platform: linux/amd64
+    restart: unless-stopped
+    shm_size: 1gb
+    volumes:
+      - box-home:/home/box
+      - box-workspace:/workspace
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+volumes:
+  gateway-data:
+  box-home:
+  box-workspace:

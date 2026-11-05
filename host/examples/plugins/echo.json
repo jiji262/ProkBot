@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "kind": "grokbot-plugin",
+  "id": "example-echo",
+  "version": "1.0.0",
+  "name": {
+    "en": "Echo example",
+    "zh-CN": "回显示例"
+  },
+  "description": {
+    "en": "Verify a plugin and its bundled skill.",
+    "zh-CN": "验证插件及附带技能。"
+  },
+  "publisher": "Grok Bot Local",
+  "license": "MIT",
+  "runtime": {
+    "kind": "node-stdio",
+    "entry": "src/index.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1"
+  },
+  "permissions": {
+    "network": [],
+    "workspace": "none"
+  },
+  "configuration": [
+    {
+      "key": "MESSAGE",
+      "name": {
+        "en": "Reply text",
+        "zh-CN": "回复内容"
+      },
+      "required": false,
+      "secret": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "check-echo",
+      "path": "skills/check-echo/SKILL.md",
+      "name": {
+        "en": "Verify Echo",
+        "zh-CN": "验证回声"
+      },
+      "description": {
+        "en": "Verify the Echo example plugin when asked.",
+        "zh-CN": "用户要求验证回显示例插件时使用。"
+      },
+      "requiresTools": [
+        "echo"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "src/index.mjs",
+      "encoding": "utf8",
+      "content": "import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';\nimport { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';\nconst server = new McpServer({ name: 'example-echo', version: '1.0.0' });\nserver.registerTool('echo', { description: 'Return the configured plugin message.' }, async () => ({ content: [{ type: 'text', text: process.env.MESSAGE || 'PLUGIN_ECHO_OK' }] }));\nawait server.connect(new StdioServerTransport());\n"
+    },
+    {
+      "path": "skills/check-echo/SKILL.md",
+      "encoding": "utf8",
+      "content": "---\nname: Verify Echo\ndescription: Verify the Echo example plugin when asked.\n---\nDiscover the echo tool from the example-echo plugin. Call it and report the returned message exactly.\n"
+    }
+  ]
+}
